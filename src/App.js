@@ -1,10 +1,21 @@
 import logo from './logo.svg';
+import Home from './Components/Home';
+import { BrowserRouter,Routes,Route,Link } from 'react-router-dom';
 import './App.css';
+import Login from './Components/Login';
+import Footer from './Components/Footer';
 
 function App() {
   return (
     <div className="App">
-      <h1 className="text-primary m-5">Hello World</h1>
+
+     
+     <BrowserRouter>
+         <Routes>
+            <Route path='/' element={<Home />} />
+            <Route path='/login' element={<Login />} />
+         </Routes>
+     </BrowserRouter>
     </div>
   );
 }

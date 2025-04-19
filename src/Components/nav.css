@@ -1,0 +1,53 @@
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Amazon Ember';
+  width: 100%;
+  height: 100%;
+   
+}
+
+.header{
+    background:rgb(111, 14, 102);
+    display: flex;
+    width: 1520px;
+    height: 80px;
+    color: white;
+    padding: 0;
+    margin: 0;
+    border-radius: 10px;
+ 
+   
+}
+
+
+.shopName{
+    
+    padding-top: 20px;
+    padding-left: 20px;
+    
+}
+.nav-link{
+   
+ 
+   padding-left: 40px; 
+}
+
+
+.nav-link-all{
+    margin-left: 200px;
+    display: inline-flex;
+    padding-top: 20px;
+    padding-left: 200px;
+   
+}
+.ac{
+   gap: 40px;
+    padding-right: 200px;
+    padding-left: 20px;
+}
+
+
+.img-size{
+    height: 20%;
+    width: 60%;
+}
