@@ -1,0 +1,15 @@
+.bnr_img{
+    width: 1525px;
+    height: 738px;
+}
+
+.shr{
+    
+    position: absolute;
+    display: inline-block;
+    border-radius: 10px;
+   height: 40px;
+   width: 500px;
+    top: 30%;
+    right: 10%;
+}

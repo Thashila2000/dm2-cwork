@@ -8,16 +8,16 @@ import './nav.css';
 function Navb(){
    return <>
          <div className= "header">
-        <img src="c:\Users\WW\Pictures\Screenshots\my logo.png" />
+        <div className="logo-container"><img  src="/img/srclg.png"  className="logo-img" /></div>
         <div className="nav-link-all">
-               <Link to='/' className="nav-link">Home</Link>
-               <Link to='/Login' className="nav-link">Category</Link>
+               <Link to='/' className="nav-link link-txt">Home</Link>
+               <Link to='/Login' className="nav-link link-txt">Category</Link>
 
-               <Link to='/Login' className="nav-link">About</Link>
-               <Link to='/Login' className="nav-link">Contact</Link>
+               <Link to='/Login' className="nav-link link-txt">About</Link>
+               <Link to='/Login' className="nav-link link-txt">Contact</Link>
                <div className="ac"> 
-               <Link to='/'><Button>Create account</Button></Link>
-               <Link to='/'>Login</Link>
+               <Link to='/'  className="nav-linklg1"><Button>Create account</Button></Link>
+               <Link to='/'   className="nav-linklg link-txt">Login</Link>
                </div>
         </div>
    </div> 
