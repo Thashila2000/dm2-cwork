@@ -13,9 +13,9 @@ export default function Home() {
     </div>
 
     <div className="slogn">
-    <span className="part-one">Designed With</span> <span className="part-two">You in Mind</span>
+    <span className="part-one">Designed With You in Mind</span> <span className="part-two">Crafted To Complement Every Sparkle You Seek</span>
     </div>
-    <div class="slogan-text"><p class="slogan-text">What shine are you looking for?</p></div>
+    <div ><p className="slogan-text"><span className="prt-one">What shine are you looking for?</span> </p></div>
 
     <div className="shr_cont">
           <input type="search" placeholder="Search Here" className="shr" /> 

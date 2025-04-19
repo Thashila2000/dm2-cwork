@@ -6,7 +6,7 @@
 .shr_cont{
    
         position: absolute;
-        top: 55%;
+        top: 60%;
         left: 70%;
         transform: translate(-50%, -50%);
       
@@ -26,8 +26,8 @@
 .shr_contBtn{
     width: 100px;
     position: absolute;
-    top: 55%;
-    left: 88%;
+    top: 60%;
+    left: 90.5%;
     transform: translate(-50%, -50%);
   
 }
@@ -38,7 +38,7 @@
     border-bottom-left-radius: 10px ;
     padding: 12px 20px;
     font-size: 18px;
-    width: 500px;
+    width: 700px;
     border: 1px solid #ccc;
 }
 
@@ -52,13 +52,13 @@
 }
 
 .slogn{
-    font-size: 2.5rem;
+    
   font-weight: 800;
   color: #ffffff; 
   text-align: center;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
   font-family: 'Playfair Display', serif;
-  font-size: 270%;
+  width: 600px;
   position: absolute;
     top: 35%;
     left: 70%;
@@ -66,21 +66,33 @@
 }
 
 .part-one {
+  font-size: 3rem;
     color: #9f8802; 
   }
   
   .part-two {
-    color: #FF69B4; 
+    font-size: 2rem;
+    color: #df0371; 
   }
 
   .slogan-text {
+    font-size: 2rem;
     margin-top: 15px;
-    font-size: 1.6rem;
-    color: #99668c; 
+     
     font-weight: 800;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
     font-family: 'Playfair Display', serif;
     position: absolute;
-    top: 45%;
+    top: 50%;
     left: 70%;
     transform: translate(-50%, -50%);
+  }
+
+  .prt-one{
+    
+    color: #007563;
+
+  }
+  .prt-two{
+      color: #007563;
   }
