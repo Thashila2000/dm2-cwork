@@ -15,6 +15,7 @@ export default function Home() {
     <div className="slogn">
     <span className="part-one">Designed With</span> <span className="part-two">You in Mind</span>
     </div>
+    <div class="slogan-text"><p class="slogan-text">What shine are you looking for?</p></div>
 
     <div className="shr_cont">
           <input type="search" placeholder="Search Here" className="shr" /> 
