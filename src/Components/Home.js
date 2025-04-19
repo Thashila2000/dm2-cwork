@@ -8,18 +8,22 @@ import ProductCard from "./ProductCard"
 export default function Home() {
     return <>
         <Navb />
-    <div cla>
+    <div >
       <img src="/img/img3.jpg" alt="Description" className="bnr_img" />
     </div>
 
+    <div className="slogn">
+    <span className="part-one">Designed With</span> <span className="part-two">You in Mind</span>
+    </div>
+
     <div className="shr_cont">
-      <input type="search" placeholder="Search Here" className="shr" /> 
+          <input type="search" placeholder="Search Here" className="shr" /> 
       </div>
-      <div className="shr_contBtn">
-        <img src="/img/srch_lg.png" type="Button" className="src_btn" />
-      </div>
-      <div>
-      <ProductCard />
+          <div className="shr_contBtn">
+            <img src="/img/srch_lg.png" type="Button" className="src_btn" />
+          </div>
+          <div>
+          <ProductCard />
       </div>
      
     </>    
