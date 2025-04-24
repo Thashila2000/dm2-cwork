@@ -6,7 +6,7 @@
 .shr_cont{
    
         position: absolute;
-        top: 60%;
+        top: 70%;
         left: 70%;
         transform: translate(-50%, -50%);
       
@@ -26,8 +26,8 @@
 .shr_contBtn{
     width: 100px;
     position: absolute;
-    top: 60%;
-    left: 90.5%;
+    top: 70%;
+    left: 93%;
     transform: translate(-50%, -50%);
   
 }
@@ -71,7 +71,7 @@
   }
   
   .part-two {
-    font-size: 2rem;
+    font-size: 2.2rem;
     color: #df0371; 
   }
 
@@ -80,10 +80,10 @@
     margin-top: 15px;
      
     font-weight: 800;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.s3);
     font-family: 'Playfair Display', serif;
     position: absolute;
-    top: 50%;
+    top: 55%;
     left: 70%;
     transform: translate(-50%, -50%);
   }
@@ -96,3 +96,15 @@
   .prt-two{
       color: #007563;
   }
+
+
+.icn{
+padding-bottom: 30px;
+  margin-bottom: 20px;
+  margin-left: 35px;
+ 
+}
+
+.prfl{
+   margin-left:30px ;
+}

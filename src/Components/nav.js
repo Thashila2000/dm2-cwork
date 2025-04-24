@@ -2,7 +2,11 @@ import React from "react"
 import { Router,Link,BrowserRouter } from "react-router-dom"
 import { Button } from 'react-bootstrap';
 import './nav.css';
+import Avatar from '@mui/material/Avatar'
+import Stack from '@mui/material/Stack';
+import './cmn.css'
 
+import CustomizedBadges from "./CustomizedBadges";
 
 
 function Navb(){
@@ -15,10 +19,23 @@ function Navb(){
 
                <Link to='/Login' className="nav-link link-txt">About</Link>
                <Link to='/Login' className="nav-link link-txt">Contact</Link>
+               
+               
                <div className="ac"> 
                <Link to='/'  className="nav-linklg1"><Button>Create account</Button></Link>
                <Link to='/Login'   className="nav-linklg link-txt">Login</Link>
+
+              
+
+               
+        </div>
+        <div className="icn">
+               <CustomizedBadges />
                </div>
+       <div className="prfl">
+              <Stack direction="row" spacing={2}>
+                     <Avatar alt="Cindy Baker" src="" />
+               </Stack></div>
         </div>
    </div> 
 

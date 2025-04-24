@@ -41,7 +41,7 @@ body{
 .nav-link{
    
  
-   padding-left: 40px; 
+   padding-left: 20px; 
 }
 
 .nav-linklg{
@@ -63,7 +63,7 @@ body{
 
 .nav-link-all{
     font-size: large;
-    margin-left: 200px;
+    margin-left: 190px;
     display: inline-flex;
     padding-top: 20px;
     padding-left: 200px;

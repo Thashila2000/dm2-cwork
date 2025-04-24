@@ -2,6 +2,8 @@ import React, { Fragment } from "react"
 import Navb from "./nav"
 import './cmn.css'
 import ProductCard from "./ProductCard"
+import Footer from "./Footer"
+import Prd_slide from "./Prd_slide"
 
 
 
@@ -23,8 +25,19 @@ export default function Home() {
           <div className="shr_contBtn">
             <img src="/img/srch_lg.png" type="Button" className="src_btn" />
           </div>
+
+          <div>
+            <Prd_slide  />
+          </div>
           <div>
           <ProductCard />
+          <ProductCard />
+          <ProductCard />
+          <ProductCard />
+          <ProductCard />
+          <ProductCard />
+          <Footer/>
+          
       </div>
      
     </>    
