@@ -1,5 +1,5 @@
 
-import Home from './Components/Home';
+import Home from './Pages/Home';
 import { BrowserRouter as Router,Routes,Route,Link } from 'react-router-dom';
 import './App.css';
 import {HelmetProvider} from 'react-helmet-async';
@@ -16,14 +16,13 @@ function App() {
   return (
     <Router>
     <div className="App">
-
-     
-     <BrowserRouter>
+      <HelmetProvider>
          <Routes>
             <Route path='/' element={<Home />} />
             <Route path='/login' element={<Login />} />
          </Routes>
          </HelmetProvider>
+
      
     </div>
     </Router>
