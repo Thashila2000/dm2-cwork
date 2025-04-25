@@ -4,14 +4,11 @@ import './cmn.css'
 import ProductCard from "./ProductCard"
 import Footer from "./Footer"
 import Prd_slide from "./Prd_slide"
-import MetaData from "./MetaData"
 
 
 
 export default function Home() {
     return <>
-    <Fragment>
-      <MetaData title={'Find your Own Desing'} />
         <Navb />
     <div >
       <img src="/img/img3.jpg" alt="Description" className="bnr_img" />
@@ -42,6 +39,6 @@ export default function Home() {
           <Footer/>
           
       </div>
-      </Fragment>
+     
     </>    
 }
