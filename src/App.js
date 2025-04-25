@@ -20,6 +20,7 @@ function App() {
    
      <BrowserRouter>
      <Navb />
+     
          <Routes>
             <Route path='/' element={<Home />} />
             <Route path='/Category' element={<Category/>} />
@@ -28,6 +29,7 @@ function App() {
             <Route path='/ContactPage' element={<ContactPage />} />
             <Route path='/CreateAccount' element={<CreateAccount />} />
          </Routes>
+         <Footer/>
      </BrowserRouter>
     </div>
   );
