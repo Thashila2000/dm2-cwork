@@ -9,13 +9,9 @@ import MetaData from "./MetaData"
 
 export default function Home() {
     return <>
-<<<<<<< HEAD
     <Fragment>
       <MetaData title={'Find your Own Desing'} />
         <Navb />
-=======
-      
->>>>>>> 2617cffce25097e456fe0e03b90cc0fc954b1658
     <div >
       <img src="/img/img3.jpg" alt="Description" className="bnr_img" />
     </div>
