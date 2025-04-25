@@ -1,7 +1,7 @@
 import React from "react"
 import { Router,Link,BrowserRouter } from "react-router-dom"
 import { Button } from 'react-bootstrap';
-import './Nav.css';
+import './nav.css';
 import Avatar from '@mui/material/Avatar'
 import Stack from '@mui/material/Stack';
 import './cmn.css'

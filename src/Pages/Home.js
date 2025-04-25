@@ -1,9 +1,10 @@
 import React, { Fragment } from "react"
-import './cmn.css'
+import '../Components/cmn.css'
 import ProductCard from "../Components/ProductCard"
 import Footer from "../Components/Footer"
 import Prd_slide from "../Components/Prd_slide"
 import MetaData from "../Components/MetaData"
+import Navb from "../Components/nav"
 
 
 
