@@ -9,6 +9,8 @@ import Category from './Pages/Category';
 import About from './Pages/About';
 import CreateAccount from './Pages/CreateAccount';
 import ContactPage from './Pages/ContactPage';
+import '@fortawesome/fontawesome-free/css/all.min.css';
+
 
 
 function App() {

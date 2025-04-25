@@ -1,28 +1,44 @@
 import React from "react"
+import './Footer.css'
 
-import Pagination from 'react-bootstrap/Pagination';
 
 
 
 function Footer(){
     return (
-        <Pagination>
-          <Pagination.First />
-          <Pagination.Prev />
-          <Pagination.Item>{1}</Pagination.Item>
-          <Pagination.Ellipsis />
+      <footer className="footer">
+      <div className="footer-container">
     
-          <Pagination.Item>{10}</Pagination.Item>
-          <Pagination.Item>{11}</Pagination.Item>
-          <Pagination.Item active>{12}</Pagination.Item>
-          <Pagination.Item>{13}</Pagination.Item>
-          <Pagination.Item disabled>{14}</Pagination.Item>
+        <div className="footer-brand">
+          <h2>Golden Blitz</h2>
+          <p>Crafting elegance since 1985</p>
+        </div>
     
-          <Pagination.Ellipsis />
-          <Pagination.Item>{20}</Pagination.Item>
-          <Pagination.Next />
-          <Pagination.Last />
-        </Pagination>
+        <div className="footer-contact">
+          <h3>Contact Us</h3>
+          <ul>
+            <li>
+              <i className="fas fa-map-marker-alt"></i>
+              &nbsp; 123 Elegance Street, Colombo 07, Sri Lanka
+            </li>
+            <li>
+              <i className="fas fa-envelope"></i>
+              &nbsp; support@Golden Blitzgit.com
+            </li>
+            <li>
+              <i className="fas fa-phone-alt"></i>
+              &nbsp; +94 77 123 4567
+            </li>
+          </ul>
+        </div>
+    
+
+      </div>
+
+      <div className="footer-bottom">
+        <p>&copy; {new Date().getFullYear()} Golden Blitz. All rights reserved.</p>
+      </div>
+    </footer>
       );
     
 }
