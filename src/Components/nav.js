@@ -18,7 +18,7 @@ function Navb(){
                <Link to='/Category' className="nav-link link-txt">Category</Link>
 
                <Link to='/About' className="nav-link link-txt">About</Link>
-               <Link to='/Contact' className="nav-link link-txt">Contact</Link>
+               <Link to='/ContactPage' className="nav-link link-txt">Contact</Link>
                
                
                <div className="ac"> 
