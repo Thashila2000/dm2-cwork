@@ -1,5 +1,4 @@
 import React, { Fragment } from "react"
-import Navb from "./nav"
 import './cmn.css'
 import ProductCard from "./ProductCard"
 import Footer from "./Footer"
@@ -9,7 +8,7 @@ import Prd_slide from "./Prd_slide"
 
 export default function Home() {
     return <>
-        <Navb />
+      
     <div >
       <img src="/img/img3.jpg" alt="Description" className="bnr_img" />
     </div>
