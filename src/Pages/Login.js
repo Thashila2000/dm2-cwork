@@ -1,6 +1,6 @@
+import React, { useState } from 'react';
 import axios from 'axios';
-import { useState } from 'react';
-import './Login.css'
+import './Login.css'; 
 
 const Login = () => {
     const [username, setUsername] = useState('');
@@ -16,8 +16,9 @@ const Login = () => {
     };
 
   return (
+    <div className="page-wrapper">
     <div className="login-container">
-      <h2 className="login-title">Login Page</h2>
+      <h2 className="login-title">User Login</h2>
       <input
         type="text"
         placeholder="Username"
@@ -34,6 +35,7 @@ const Login = () => {
       />
       <button onClick={handleLogin} className="login-button">Login</button>
     </div>
+  </div>
   )
 }
 
