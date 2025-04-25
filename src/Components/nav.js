@@ -1,7 +1,7 @@
 import React from "react"
 import { Router,Link,BrowserRouter } from "react-router-dom"
 import { Button } from 'react-bootstrap';
-import './nav.css';
+import './Nav.css';
 import Avatar from '@mui/material/Avatar'
 import Stack from '@mui/material/Stack';
 import './cmn.css'
@@ -15,14 +15,14 @@ function Navb(){
         <div className="logo-container"><img  src="/img/lg1-nw.png"  className="logo-img" /></div>
         <div className="nav-link-all">
                <Link to='/' className="nav-link link-txt">Home</Link>
-               <Link to='/Login' className="nav-link link-txt">Category</Link>
+               <Link to='/Category' className="nav-link link-txt">Category</Link>
 
-               <Link to='/Login' className="nav-link link-txt">About</Link>
-               <Link to='/Login' className="nav-link link-txt">Contact</Link>
+               <Link to='/About' className="nav-link link-txt">About</Link>
+               <Link to='/Contact' className="nav-link link-txt">Contact</Link>
                
                
                <div className="ac"> 
-               <Link to='/'  className="nav-linklg1"><Button>Create account</Button></Link>
+               <Link to='/CreateAccount'  className="nav-linklg1"><Button>Create account</Button></Link>
                <Link to='/Login'   className="nav-linklg link-txt">Login</Link>
 
               
