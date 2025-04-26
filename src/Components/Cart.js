@@ -11,7 +11,7 @@ export default function Cart(){
                 <div className="cart-item">
                     <div className="row">
                         <div className="col-4 col-lg-3">
-                            <img src="./images/products/1.jpg" alt="Laptop" height="90" width="115">
+                            <img src="./images/products/1.jpg" alt="Laptop" height="90" width="115" />
                         </div>
 
                         <div className="col-5 col-lg-3">
