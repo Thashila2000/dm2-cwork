@@ -15,8 +15,18 @@ function Navb({size}){
         <div className="logo-container"><img  src="/img/lg1-nw.png"  className="logo-img" /></div>
         <div className="nav-link-all">
                <Link to='/' className="nav-link link-txt">Home</Link>
-               <Link to='/Category' className="nav-link link-txt">Category</Link>
+                            <div className="dropdown">
+                     <span className="nav-link link-txt">Category ▾</span>
+                     <ul className="dropdown-menu">
+                     <li><Link to="/category/ring">Ring</Link></li>
+                     <li><Link to="/category/chain">Chain</Link></li>
+                     <li><Link to="/category/bracelet">Bracelet</Link></li>
+                     <li><Link to="/category/All">All</Link></li>
+                     </ul>
+                    </div>
 
+     
+               <Link to='/Category' className="nav-link link-txt">Category</Link>
                <Link to='/About' className="nav-link link-txt">About</Link>
                <Link to='/ContactPage' className="nav-link link-txt">Contact</Link>
                
