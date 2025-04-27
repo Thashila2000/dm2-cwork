@@ -1,15 +1,15 @@
-import React from "react"
+import React, { useState } from "react"
 import { Router,Link,BrowserRouter } from "react-router-dom"
 import { Button } from 'react-bootstrap';
 import './nav.css';
+import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
 import Avatar from '@mui/material/Avatar'
-import Stack from '@mui/material/Stack';
 import './cmn.css'
 
-import CustomizedBadges from "./CustomizedBadges";
 
+function Navb({size}){
 
-function Navb(){
+       
    return <>
          <div className= "header">
         <div className="logo-container"><img  src="/img/lg1-nw.png"  className="logo-img" /></div>
@@ -24,18 +24,18 @@ function Navb(){
                <div className="ac"> 
                <Link to='/CreateAccount'  className="nav-linklg1"><Button>Create account</Button></Link>
                <Link to='/Login'   className="nav-linklg link-txt">Login</Link>
-
-              
-
-               
+    
         </div>
-        <div className="icn">
-               <CustomizedBadges />
-               </div>
-       <div className="prfl">
-              <Stack direction="row" spacing={2}>
-                     <Avatar alt="Cindy Baker" src="" />
-               </Stack></div>
+
+        <div className="navbar-right">
+    <a href="/cart" className="cart-icon">
+      <i className="fas fa-shopping-cart"><AddShoppingCartIcon /></i>
+      <span className="cart-count" >{size}</span>
+    </a>
+    <a href="/account" className="user-icon">
+      <i className="fas fa-user"><Avatar /></i>
+    </a>
+  </div>
         </div>
    </div> 
 
@@ -43,3 +43,6 @@ function Navb(){
   
 }
 export default Navb
+
+
+

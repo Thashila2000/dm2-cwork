@@ -7,9 +7,14 @@ import Login from './Pages/Login';
 import ContactPage from './Pages/ContactPage';
 import CreateAccount from './Pages/CreateAccount';
 import Cart from './Components/Cart';
+import { useState } from 'react';
 
 
 function App() {
+
+
+  const [show,setshow] =useState(true);
+  const [cart,setcart] = useState([]);
   return (
     <Router>
     <div className="App">

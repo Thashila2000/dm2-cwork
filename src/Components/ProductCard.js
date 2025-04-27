@@ -1,27 +1,40 @@
-import React from 'react'
-import './prdct.css'
+import React, { useEffect, useState } from 'react';
+import './prdct.css';
 import { Button } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
-import { useNavigate } from "react-router-dom"
+import { useNavigate } from 'react-router-dom';
 
-export default function ProductCard() {
+export default function ProductCard({ handleclick }) {
 
-  const navigate =useNavigate();
-    function onsubmit(){
-        //cheking to  login creditianal
-        // if credits valid ,login successful
-        navigate('/Cart');
-    }
+  const [addproducts, setaddproduct] = useState([]);
+
+  useEffect(() => {
+    fetch('https://dummyjson.com/products')
+      .then((response) => response.json())
+      .then((json) => setaddproduct(json.products)); 
+  }, []);
+
+  const navigate = useNavigate();
+
+  function gocart() {
+    navigate('/Cart');
+  }
+
   return (
-    <div className="prd"><img src="/img/Productnm/j1.jpeg" className='prd-img' alt='' />
-      <div>
-        <h1 className='prd-name'>Necklace Earrings Ring Set</h1>
-        <p className='prd-price'>Rs. 60,000.00</p>
-        <p className='prd-desc'>Bridal Earrings Necklace Ring Set Smooth Water Drop Dangle Wedding Jewelry Set</p>
-        <Button variant='warning' onClick={onsubmit} >Add to Cart</Button>
-      </div>
-    
+    <div>
+      {addproducts.map(item => (
+        <div className="prd" key={item.id}>
+          <img src={item.images} className="prd-img" alt="" />
+          <div>
+            <h1 className="prd-name">{item.title}</h1>
+            <p className="prd-price">{item.price}</p>
+            <p className="prd-desc">{item.description}</p>
+            
+            <Button variant="warning" onClick={() => handleclick(item)}>
+              Add to Cart
+            </Button>
+          </div>
+        </div>
+      ))}
     </div>
-
-  )
+  );
 }

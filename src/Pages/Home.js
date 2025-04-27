@@ -1,4 +1,4 @@
-import React, { Fragment } from "react"
+import React, { Fragment, useState } from "react"
 import '../Components/cmn.css'
 import ProductCard from "../Components/ProductCard"
 import Footer from "../Components/Footer"
@@ -9,10 +9,27 @@ import Navb from "../Components/nav"
 
 
 export default function Home() {
+
+  const [cart,setcart] = useState([]);
+  
+
+  const handleclick = (item )=>{
+    let isPresent =false;
+    cart.forEach((product)=>{
+      if(item.id === product.id)
+        isPresent=true;
+
+    })
+    if(isPresent)
+      return;
+    setcart([...cart,item])
+  }
+
+ 
     return <>
     <Fragment>
       <MetaData title={'Find your Own Desing'} />
-        <Navb />
+        <Navb size={cart.length} />
     <div >
       <img src="/img/img3.jpg" alt="Description" className="bnr_img" />
     </div>
@@ -33,12 +50,8 @@ export default function Home() {
             <Prd_slide  />
           </div>
           <div>
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
+          <ProductCard handleclick={handleclick} />
+         
           <Footer/>
           
       </div>

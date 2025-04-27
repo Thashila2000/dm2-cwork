@@ -94,3 +94,28 @@ body{
     background: linear-gradient(to right, #1E0A30, #3A1B5D);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
+
+
+  .navbar-right {
+  display: flex;
+  align-items: right;
+}
+
+.navbar-right .cart-icon,
+.navbar-right .user-icon {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 1rem;
+  position: relative;
+}
+
+.navbar-right .cart-count {
+  background-color: #f44336;
+  color: #fff;
+  border-radius: 50%;
+  padding: 0.2rem 0.5rem;
+  font-size: 0.8rem;
+  position: absolute;
+  top: -0.5rem;
+  right: -0.5rem;
+}
