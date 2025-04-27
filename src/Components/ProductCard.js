@@ -29,7 +29,7 @@ export default function ProductCard({ handleclick }) {
             <p className="prd-price">{item.price}</p>
             <p className="prd-desc">{item.description}</p>
             
-            <Button variant="warning" onClick={() => handleclick(item)}>
+            <Button variant="warning" >
               Add to Cart
             </Button>
           </div>

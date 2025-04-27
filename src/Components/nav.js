@@ -5,9 +5,10 @@ import './nav.css';
 import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
 import Avatar from '@mui/material/Avatar'
 import './cmn.css'
+import '../Pages/Category.css'
 
 
-function Navb({size}){
+function Navb({size,setshow}){
 
        
    return <>
@@ -18,15 +19,15 @@ function Navb({size}){
                             <div className="dropdown">
                      <span className="nav-link link-txt">Category ▾</span>
                      <ul className="dropdown-menu">
-                     <li><Link to="/category/ring">Ring</Link></li>
-                     <li><Link to="/category/chain">Chain</Link></li>
-                     <li><Link to="/category/bracelet">Bracelet</Link></li>
-                     <li><Link to="/category/All">All</Link></li>
+                     <li><Link to="./Cat/ring">Ring</Link></li>
+                     <li><Link to="./Cat/chain">Chain</Link></li>
+                     <li><Link to="./Cat/bracelet">Bracelet</Link></li>
+                     <li><Link to="./Cat/All">All</Link></li>
                      </ul>
                     </div>
 
      
-               <Link to='/Category' className="nav-link link-txt">Category</Link>
+              
                <Link to='/About' className="nav-link link-txt">About</Link>
                <Link to='/ContactPage' className="nav-link link-txt">Contact</Link>
                
@@ -38,7 +39,7 @@ function Navb({size}){
         </div>
 
         <div className="navbar-right">
-    <a href="/cart" className="cart-icon">
+    <a href="/cart" className="cart-icon" >
       <i className="fas fa-shopping-cart"><AddShoppingCartIcon /></i>
       <span className="cart-count" >{size}</span>
     </a>
